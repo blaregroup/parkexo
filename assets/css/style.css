@@ -17,7 +17,7 @@ typed text css blog
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Mulish", sans-serif;
     color: #444444;
 }
 
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Jost", sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -408,12 +408,13 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
     /*margin-top: 0 0 40px 0;*/
-    /*width: 100%;
-    height: 80vh;*/
-    //background: #37518e;
-    //background-image:hero_bg.jpg;
-    background-image: url("../img/hero_bg.jpg");
-
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 #hero .container {
@@ -704,16 +705,26 @@ section {
 --------------------------------------------------------------*/
 #why-choose-us {
     /*background-image: url("hero_img.jpg");*/
-    background: #37518e;
+    /*background: #37518e;    */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/parking-lot.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#why-choose-us-mobile{
+    display: none;
 
 }
 
 #why-choose-us-content {
-    height: 90vh;
+    /*height: 90vh;*/
     width: 100%;
     background: #48d3e8;
 
 }
+
 
 #why-us {
     background: #48d3e8;
@@ -843,6 +854,17 @@ section {
     .why-us .img {
         min-height: 200px;
     }
+    #why-choose-us-mobile {
+    background: #48d3e8;    
+    /*height: 90vh;*/
+    width: 100%;
+    display: block;
+    }
+
+    #why-choose-us {
+        display: none;
+    }
+
 }
 
 /*--------------------------------------------------------------
@@ -1725,20 +1747,39 @@ section {
     }
 }
 
+
+/*--------------------------------------------------------------
+# download app
+--------------------------------------------------------------*/
+#download-app button {
+    background: #47b2e4;
+    color: white;
+}
+
+#download-app .view {
+    border-right: 5px solid #47b2e4;
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
+    padding-top: 40px;
     font-size: 14px;
-    background: #37517e;
+    background: #0c0c0c;
 }
+
+
 
 #footer .footer-newsletter {
     padding: 50px 0;
     background: #f3f5fa;
     text-align: center;
     font-size: 15px;
-    color: #444444;
+    color: white;
 }
 
 #footer .footer-newsletter h4 {
@@ -1747,7 +1788,7 @@ section {
     padding: 0;
     line-height: 1;
     font-weight: 600;
-    color: #37517e;
+    color: white;
 }
 
 #footer .footer-newsletter form {
@@ -1787,8 +1828,10 @@ section {
 }
 
 #footer .footer-top {
+    height: 80vh;
+    widows: 100%;
     padding: 60px 0 30px 0;
-    background: #fff;
+    background: #0e0e0e;
 }
 
 #footer .footer-top .footer-contact {
@@ -1796,30 +1839,87 @@ section {
 }
 
 #footer .footer-top .footer-contact h3 {
-    font-size: 28px;
+    font-size: 20px;
     margin: 0 0 10px 0;
     padding: 2px 0 2px 0;
-    line-height: 1;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #37517e;
+    /*line-height: 1;*/
+    /*text-transform: uppercase;*/
+    /*font-weight: 600;*/
+    color: white;
 }
+
+#footer .phone i {
+    font-size: 20px;
+    color: #47b2e4;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #e7f5fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+
 
 #footer .footer-top .footer-contact p {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
-    font-family: "Jost", sans-serif;
-    color: #5e5e5e;
+    /*font-family: "Jost", sans-serif;*/
+    color: #444444;
 }
+
+#footer .footer-top h3 {
+     font-size: 20px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    /*line-height: 1;*/
+    /*text-transform: uppercase;*/
+    /*font-weight: 600;*/
+    color: white;
+}
+
+#footer .btn-get-started {
+    margin-left: 25px;
+    color: #fff;
+    border-radius: 50px;
+    padding: 6px 25px 7px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    border: 2px solid #47b2e4;
+    font-weight: 600;
+    background: #31a9e1;
+}
+
+#footer .btn-get-started: hover {
+    margin-left: 25px;
+    color: #fff;
+    border-radius: 50px;
+    padding: 6px 25px 7px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 14px;
+    display: inline-block;
+    border: 2px solid #47b2e4;
+    font-weight: 600;
+    color: black;
+}
+
 
 #footer .footer-top h4 {
     font-size: 16px;
     font-weight: bold;
     color: #37517e;
     position: relative;
-    padding-bottom: 12px;
-}
+    padding-top: 12px;
+    color: white;
+
+} 
 
 #footer .footer-top .footer-links {
     margin-bottom: 30px;
@@ -1903,6 +2003,7 @@ section {
 @media (max-width: 768px) {
     #footer .footer-bottom {
         padding-top: 20px;
+        margin-top: 200px;
         padding-bottom: 20px;
     }
 
