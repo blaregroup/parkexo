@@ -1,7 +1,7 @@
 ![Development Platform](https://img.shields.io/badge/Development-Mobile%20%7C%20Web-blue)
 ![Development Platform](https://img.shields.io/badge/Rating-4.5/5-success)
 
-# BlareGroup - A Better Way
+# ParkExpo - A Better Way
 
 BlareGroup was born to make high quality enterprises solutions. We will be the thinker and makers for your service. Dedicating our knowledge to create user-centric designs backed by our experience. 
 
