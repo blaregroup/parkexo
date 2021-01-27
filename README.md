@@ -3,7 +3,7 @@
 
 # ParkExpo - A Better Way
 
-BlareGroup was born to make high quality enterprises solutions. We will be the thinker and makers for your service. Dedicating our knowledge to create user-centric designs backed by our experience. 
+ParkExpo was born to make high quality enterprises solutions. We will be the thinker and makers for your service. Dedicating our knowledge to create user-centric designs backed by our experience. 
 
 ### Services
 
