@@ -706,24 +706,24 @@ section {
     padding: 60px 100px 0 100px;
 }
 
-.why-us-choose-us .content h3 {
+.why-us .content h3 {
     /*font-weight: 400;*/
     font-size: 34px;
     color: white;
 }
 
-.why-us-choose-us .content h4 {
+.why-us .content h4 {
     font-size: 20px;
     /*font-weight: 700;*/
     margin-top: 5px;
 }
 
-.why-us-choose-us .content p {
+.why-us .content p {
     font-size: 15px;
     color: #c0c0c0;
 }
 
-.why-us-choose-us .img {
+.why-us .img {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
