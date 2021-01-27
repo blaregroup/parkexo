@@ -51,25 +51,25 @@ h6 {
     z-index: 9999;
     overflow: hidden;
     background: #37517e;
-    /*background: url("../img/logo.png");*/
 }
 
 #preloader:before {
     content: "";
     position: fixed;
-    /*top: calc(50% - 30px);
+    top: calc(50% - 30px);
     left: calc(50% - 30px);
     border: 6px solid #37517e;
     border-top-color: #fff;
     border-bottom-color: #fff;
-    border-radius: 50%;*/
+    border-radius: 50%;
     width: 60px;
     height: 60px;
-    background: : url('../img/logo.png');
-    /*-webkit-animation: animate-preloader 1s linear infinite;*/
-    /*animation: animate-preloader 1s linear infinite;*/
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
 }
-/*
+
+
+
 @-webkit-keyframes animate-preloader {
     0% {
         transform: rotate(0deg);
@@ -89,7 +89,7 @@ h6 {
         transform: rotate(360deg);
     }
 }
-*/
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
