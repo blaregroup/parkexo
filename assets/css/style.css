@@ -484,6 +484,8 @@ h6 {
 @media (max-width: 991px) {
     #hero {
         height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/hero.jpg");
+        background-position: right;
         text-align: center;
     }
 
@@ -692,13 +694,13 @@ section {
 #why-choose-us-content {
     /*height: 90vh;*/
     width: 100%;
-    background: #0D56A8;
+    background: rgba(40, 58, 90);
 
 }
 
 
 #why-us {
-    background: #0D56A8;
+    background: rgba(40, 58, 90);
 
 }
 
@@ -826,7 +828,7 @@ section {
         min-height: 200px;
     }
     #why-choose-us-mobile {
-    background: #48d3e8;    
+    background: rgba(40, 58, 90);    
     /*height: 90vh;*/
     width: 100%;
     display: block;
