@@ -126,6 +126,7 @@ h6 {
     transition: all 0.5s;
     z-index: 997;
     padding: 15px 0;
+    background: rgba(40, 58, 90);
 }
 
 #header.header-scrolled,
@@ -435,7 +436,7 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-    /*margin-top: 0 0 40px 0;*/
+    margin-top: 72px;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("../img/hero.jpg");
@@ -446,7 +447,7 @@ h6 {
 }
 
 #hero .container {
-    padding-top: 72px;
+    padding-top: 40px;
 
 }
 
