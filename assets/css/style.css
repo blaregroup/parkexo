@@ -512,8 +512,9 @@ h6 {
 
 @media (max-width: 991px) {
     #hero {
+        margin-top: 50px;
         height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/hero.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../img/hero-mini.jpg");
         background-position: right;
         text-align: center;
     }
