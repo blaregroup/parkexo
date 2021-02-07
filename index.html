@@ -61,7 +61,7 @@
                     </h>
                     <div class="d-lg-flex mt-5">
                         <!-- <a href="#about" class="btn-get-started scrollto">S</a> -->
-                        <a href="#" class="btn-get-started ml-2 " onclick="$('#contactform_modal').modal('show');">Get Your Booking</a>
+                        <a href="#" class="btn-get-started ml-2 " onclick="$('#book_modal').modal('show');">Get Your Booking</a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
@@ -512,55 +512,155 @@
     <!-- join parkexo model -->
     <!-- Button trigger modal -->
     <div class="modal fade " id="joinparkexo_modal" tabindex="-1" role="dialog" aria-labelledby="joinparkexo_modal" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered  "  role="document">
+      <div class="modal-dialog  modal-lg modal-dialog-centered  "  role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Join ParkExo </h5>
+            <h5 class="modal-title" id="exampleModalLongTitle"> Join ParkExo </h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <form>
-              <div class="form-group row">
-                <label for="username" class="col-sm-3 col-form-label">Name</label>
-                <div class="col-sm-9 input-group">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text text-primary ri-user-fill"></div>
-                    </div>
-                    <input type="text" class="form-control" id="username" placeholder="Enter your Name">
+            <div class="row">
+                <div class="col-md-5" >
+                    <img src="assets/img/joinparkexo.svg" height="300" width="300" />
                 </div>
-              </div>
-              <div class="form-group row">
-                <label for="usermobile" class="col-sm-3 col-form-label">Contact No.</label>
-                <div class="col-sm-9 input-group">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text text-primary ri-phone-fill"></div>
-                    </div>
-                  <input type="text" class="form-control" id="usermobile" placeholder="Contact Number">
+                <div class="col-md-7">
+                    <form>
+                      <div class="form-group row">
+                        <label for="username" class="col-sm-3 col-form-label">Name</label>
+                        <div class="col-sm-9 input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text text-primary ri-user-fill"></div>
+                            </div>
+                            <input type="text" class="form-control" id="username" placeholder="Tony Stark">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="usermobile" class="col-sm-3 col-form-label">Contact</label>
+                        <div class="col-sm-9 input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text text-primary ri-phone-fill"></div>
+                            </div>
+                          <input type="text" class="form-control" id="usermobile" placeholder="1234567891">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="usermobile" class="col-sm-3 col-form-label">Email</label>
+                        <div class="col-sm-9 input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text text-primary ri-phone-fill"></div>
+                            </div>
+                          <input type="text" class="form-control" id="useremail" placeholder="user@something.com">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="userlocation" class="col-sm-3 col-form-label">Location</label>
+                        <div class="col-sm-9 input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text text-primary ri-map-pin-2-fill"></div>
+                            </div>
+                          <input type="text" class="form-control" id="location" placeholder="Parking area address ">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="usermessage" class="col-sm-3 col-form-label">Message</label>
+                        <div class="col-sm-9">
+                          <textarea type="textarea" class="form-control" id="usermessage" placeholder="I have parking space and I am interested to join parkexo."></textarea>
+                        </div>
+                      </div>
+                    </form>
                 </div>
-              </div>
-              <div class="form-group row">
-                <label for="userlocation" class="col-sm-3 col-form-label">Location:</label>
-                <div class="col-sm-9 input-group">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text text-primary ri-map-fill"></div>
-                    </div>
-                  <input type="text" class="form-control" id="location" placeholder="Parking area address ">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="usermessage" class="col-sm-3 col-form-label">Message</label>
-                <div class="col-sm-9">
-                  <textarea type="textarea" class="form-control" id="usermessage" placeholder="I have parking space and I am interested to join parkexo."></textarea>
-                </div>
-              </div>
-            </form>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <a type="submit" class="btn btn-primary" role=button onclick="openJoinMailClient()" >Send</a>
+            <a type="submit" class="btn btn-primary" role=button onclick="openJoinMailClient()" >Join</a>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book parkexo model -->
+    <!-- Button trigger modal -->
+    <div class="modal fade " id="book_modal" tabindex="-1" role="dialog" aria-labelledby="book_modal" aria-hidden="true">
+      <div class="modal-dialog  modal-lg modal-dialog-centered  "  role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id=""> Book Parking </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="assets/img/parkingdemo.svg" height="300" width="200" />
+                </div>
+                <div class="col-md-8">
+                    <form>
+                      <div class="form-group row">
+                        <label for="username" class="col-sm-3 col-form-label">Name</label>
+                        <div class="col-sm-9 input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text text-primary ri-user-fill"></div>
+                            </div>
+                            <input type="text" class="form-control" id="book_username" placeholder="Tony Stark">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="usermobile" class="col-sm-3 col-form-label">Contact</label>
+                        <div class="col-sm-9 input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text text-primary ri-phone-fill"></div>
+                            </div>
+                          <input type="text" class="form-control" id="book_contact" placeholder="1234567891">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="usermobile" class="col-sm-3 col-form-label">Email</label>
+                        <div class="col-sm-9 input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text text-primary ri-phone-fill"></div>
+                            </div>
+                          <input type="text" class="form-control" id="book_email" placeholder="user@something.com">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="userlocation" class="col-sm-3 col-form-label">Location</label>
+                        <div class="col-sm-9 input-group">                            
+                          <input type="text" class="form-control" id="book_location" placeholder="Parking area address ">
+                          <div class="input-group-prepend">
+                              <div class="input-group-text text-primary ri-map-pin-2-fill" onclick="$('#mapmodel').modal('show');"></div>
+                          </div>
+                        </div>                        
+                      </div> 
+                      <div class="form-group row">
+                        <label for="booktime" class="col-sm-3 col-form-label">Start-End</label>
+                        <div class="col-sm-9 input-group">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text text-primary ri-map-pin-time-fill"></div>
+                            </div>
+                          <input type="text" class="form-control" id="booktime">
+                        </div>                                                
+                      </div>                     
+                    </form>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a type="submit" class="btn btn-primary" role=button onclick="openJoinMailClient()" >Book</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="mapmodel" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" >
+        <div class="modal-content">
+          <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1_3VzquRd35p7RBRylCILCOsZ4KQ0PO9x" width="auto" height="600px"></iframe>
         </div>
       </div>
     </div>
@@ -584,6 +684,9 @@
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/vendor/whatsapp/floating-wpp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <!-- typed text script -->
@@ -594,6 +697,16 @@
           setTimeout(function(){ $('#contactform_modal').modal('show')}, 10000*10);
 
         }
+
+        $('#booktime').daterangepicker({
+          timePicker: true,
+          startDate: moment().startOf('hour'),
+          endDate: moment().startOf('hour').add(24, 'hour'),
+          locale: {
+              format: 'YYYY/MM/DD hh:mm A'
+          },
+          parentEl: "#book_modal",
+        });
 
         function openMailClient()
         {
